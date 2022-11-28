@@ -54,4 +54,4 @@ jobs:
           app-name: 'PocWindows'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C49D89B3B8834CB5B91D9CA465754504 }}
-          package: .
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
